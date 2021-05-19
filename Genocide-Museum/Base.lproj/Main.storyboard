@@ -1,24 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="je7-za-Rs7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Genocide_Museum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="188" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OpL-sh-aHD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Gri-Ef-fCD" customClass="ItemTableViewCell" customModule="Genocide_Museum" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="188"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gri-Ef-fCD" id="slv-YE-tdg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wJt-NZ-ycY">
+                                                    <rect key="frame" x="20" y="11" width="374" height="166"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J5x-m1-bfe">
+                                                        <size key="itemSize" width="374" height="166"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="4bd-Fm-zNp" customClass="ItemCollectionViewCell" customModule="Genocide_Museum" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="166"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kt9-lY-rOg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="166"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Am8-iD-RiB">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="166"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="Am8-iD-RiB" secondAttribute="bottom" id="XpU-Py-fZT"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Am8-iD-RiB" secondAttribute="trailing" id="eR0-OA-gEG"/>
+                                                                    <constraint firstItem="Am8-iD-RiB" firstAttribute="top" secondItem="Kt9-lY-rOg" secondAttribute="top" id="vGE-B8-g08"/>
+                                                                    <constraint firstItem="Am8-iD-RiB" firstAttribute="leading" secondItem="Kt9-lY-rOg" secondAttribute="leading" id="x7f-ry-HEQ"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="Am8-iD-RiB" id="jtK-UN-gfx"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wJt-NZ-ycY" firstAttribute="leading" secondItem="slv-YE-tdg" secondAttribute="leadingMargin" id="I0q-2Q-haR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wJt-NZ-ycY" secondAttribute="bottom" id="MWu-IC-cSK"/>
+                                                <constraint firstItem="wJt-NZ-ycY" firstAttribute="top" secondItem="slv-YE-tdg" secondAttribute="topMargin" id="Nhl-ka-jS3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wJt-NZ-ycY" secondAttribute="trailing" id="PwX-9U-ROf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageCollectionView" destination="wJt-NZ-ycY" id="8y4-6e-d2r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OpL-sh-aHD" secondAttribute="bottom" id="TQc-UN-z2i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OpL-sh-aHD" secondAttribute="trailing" id="gGH-Qd-fEG"/>
+                            <constraint firstItem="OpL-sh-aHD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kLz-gR-Urx"/>
+                            <constraint firstItem="OpL-sh-aHD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nLC-Fb-tha"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="UY1-e3-DQv"/>
+                    <navigationItem key="navigationItem" id="xfu-OA-q1S"/>
+                    <connections>
+                        <outlet property="tableView" destination="OpL-sh-aHD" id="fbe-1a-xEH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1826" y="-688"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ytY-oN-mSM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="je7-za-Rs7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ydd-iA-xfu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7y3-oo-iso" kind="relationship" relationship="rootViewController" id="5xg-cf-6a9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOD-B1-twC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="79.6875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KO4-Ie-8py">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7y3-oo-iso" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="2wW-D3-pkn"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jqr-gp-c4K">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Jyi-Nw-3nx"/>
+                        <segue destination="I2k-gz-VjQ" kind="relationship" relationship="viewControllers" id="E5z-es-Gjq"/>
+                        <segue destination="CKF-GS-d9x" kind="relationship" relationship="viewControllers" id="4Ms-k5-pTC"/>
+                        <segue destination="2id-Nc-5M2" kind="relationship" relationship="viewControllers" id="UNU-zU-Ivd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvV-tr-EZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="80"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="XnV-mz-oVS">
+            <objects>
+                <viewController id="CKF-GS-d9x" customClass="ViewController" customModule="Genocide_Museum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I0d-fg-sNW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xFN-o8-0u5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="p59-O1-wqL"/>
+                    <navigationItem key="navigationItem" id="Dgs-EF-GIo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOc-KV-Wr7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="830"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Itu-3V-mRh">
+            <objects>
+                <viewController id="I2k-gz-VjQ" customClass="ViewController" customModule="Genocide_Museum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h73-6M-yK2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="52L-Sl-yn8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="8bo-3v-SFE"/>
+                    <navigationItem key="navigationItem" id="ZJ4-Lh-NLD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQH-BS-l5c" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010" y="80"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="t3A-im-yrU">
+            <objects>
+                <viewController id="2id-Nc-5M2" customClass="ViewController" customModule="Genocide_Museum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2TJ-Z0-XQj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dVU-2B-PE9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="SEt-Xc-rnh"/>
+                    <navigationItem key="navigationItem" id="NeT-W0-JId"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uev-7k-fA7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="1439"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

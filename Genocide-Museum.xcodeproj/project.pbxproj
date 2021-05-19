@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		CA4E1F0D2654FD440001FA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F0C2654FD440001FA3F /* AppDelegate.swift */; };
 		CA4E1F0F2654FD440001FA3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F0E2654FD440001FA3F /* SceneDelegate.swift */; };
-		CA4E1F112654FD440001FA3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F102654FD440001FA3F /* ViewController.swift */; };
 		CA4E1F142654FD440001FA3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4E1F122654FD440001FA3F /* Main.storyboard */; };
 		CA4E1F162654FD460001FA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4E1F152654FD460001FA3F /* Assets.xcassets */; };
 		CA4E1F192654FD460001FA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4E1F172654FD460001FA3F /* LaunchScreen.storyboard */; };
+		CA4E1F24265513380001FA3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F23265513380001FA3F /* HomeViewController.swift */; };
+		CA4E1F2F265539420001FA3F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F2E265539420001FA3F /* ItemTableViewCell.swift */; };
+		CA4E1F3226553C510001FA3F /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F3126553C510001FA3F /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA4E1F092654FD440001FA3F /* Genocide-Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genocide-Museum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4E1F0C2654FD440001FA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA4E1F0E2654FD440001FA3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA4E1F102654FD440001FA3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA4E1F132654FD440001FA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA4E1F152654FD460001FA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4E1F182654FD460001FA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA4E1F1A2654FD460001FA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4E1F23265513380001FA3F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA4E1F2E265539420001FA3F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		CA4E1F3126553C510001FA3F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		CA4E1F0B2654FD440001FA3F /* Genocide-Museum */ = {
 			isa = PBXGroup;
 			children = (
+				CA4E1F22265513210001FA3F /* Controllers */,
 				CA4E1F0C2654FD440001FA3F /* AppDelegate.swift */,
 				CA4E1F0E2654FD440001FA3F /* SceneDelegate.swift */,
-				CA4E1F102654FD440001FA3F /* ViewController.swift */,
 				CA4E1F122654FD440001FA3F /* Main.storyboard */,
 				CA4E1F152654FD460001FA3F /* Assets.xcassets */,
 				CA4E1F172654FD460001FA3F /* LaunchScreen.storyboard */,
 				CA4E1F1A2654FD460001FA3F /* Info.plist */,
+				CA4E1F2E265539420001FA3F /* ItemTableViewCell.swift */,
+				CA4E1F3126553C510001FA3F /* ItemCollectionViewCell.swift */,
 			);
 			path = "Genocide-Museum";
+			sourceTree = "<group>";
+		};
+		CA4E1F22265513210001FA3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E1F23265513380001FA3F /* HomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4E1F112654FD440001FA3F /* ViewController.swift in Sources */,
+				CA4E1F3226553C510001FA3F /* ItemCollectionViewCell.swift in Sources */,
+				CA4E1F2F265539420001FA3F /* ItemTableViewCell.swift in Sources */,
 				CA4E1F0D2654FD440001FA3F /* AppDelegate.swift in Sources */,
 				CA4E1F0F2654FD440001FA3F /* SceneDelegate.swift in Sources */,
+				CA4E1F24265513380001FA3F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
