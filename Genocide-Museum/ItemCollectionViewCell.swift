@@ -10,4 +10,8 @@ import UIKit
 class ItemCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
+    
+    func setup(with image: image) {
+        imageView.image = image.image
+    }
 }

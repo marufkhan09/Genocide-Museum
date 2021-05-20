@@ -15,6 +15,7 @@
 		CA4E1F24265513380001FA3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F23265513380001FA3F /* HomeViewController.swift */; };
 		CA4E1F2F265539420001FA3F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F2E265539420001FA3F /* ItemTableViewCell.swift */; };
 		CA4E1F3226553C510001FA3F /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E1F3126553C510001FA3F /* ItemCollectionViewCell.swift */; };
+		CA7066CF26563ADB0045F6A1 /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7066CE26563ADB0045F6A1 /* images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CA4E1F23265513380001FA3F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CA4E1F2E265539420001FA3F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		CA4E1F3126553C510001FA3F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA7066CE26563ADB0045F6A1 /* images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				CA4E1F1A2654FD460001FA3F /* Info.plist */,
 				CA4E1F2E265539420001FA3F /* ItemTableViewCell.swift */,
 				CA4E1F3126553C510001FA3F /* ItemCollectionViewCell.swift */,
+				CA7066CE26563ADB0045F6A1 /* images.swift */,
 			);
 			path = "Genocide-Museum";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				CA4E1F0D2654FD440001FA3F /* AppDelegate.swift in Sources */,
 				CA4E1F0F2654FD440001FA3F /* SceneDelegate.swift in Sources */,
 				CA4E1F24265513380001FA3F /* HomeViewController.swift in Sources */,
+				CA7066CF26563ADB0045F6A1 /* images.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
